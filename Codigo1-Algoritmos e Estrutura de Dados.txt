@@ -1,0 +1,58 @@
+#@title INTRODUÇÃO AOS ALGORITMOS
+
+
+# Introdução ao Python - Conceitos Básicos
+
+# 1. Declaração de Variáveis e Tipos de Dados
+# Em Python, não é necessário declarar o tipo da variável explicitamente
+
+# Variáveis do tipo texto (string)
+nome = "Alice"  # Armazena um nome como texto
+curso = "Ciência da Computação"
+
+# Variáveis numéricas
+idade = 20       # Inteiro (int)
+altura = 1.65    # Número decimal (float)
+
+# Variável booleana (Verdadeiro ou Falso)
+estudante = True  # Indica se a pessoa é estudante
+
+# Exibindo os valores armazenados nas variáveis
+print("Nome:", nome)
+print("Curso:", curso)
+print("Idade:", idade, "anos")
+print("Altura:", altura, "metros")
+print("É estudante?:", estudante)
+
+# 2. Entrada e Saída de Dados
+# Capturando um nome digitado pelo usuário
+nome_usuario = input("Qual é o seu nome? ")  # O input sempre retorna uma string
+
+# Capturando um número digitado pelo usuário e convertendo para inteiro
+idade_usuario = int(input("Qual é a sua idade? "))
+
+# Exibindo as informações recebidas do usuário
+print("Seja bem-vindo(a),", nome_usuario, "!")
+print("Você tem", idade_usuario, "anos.")
+
+# 3. Operações básicas com variáveis numéricas
+num1 = 10
+num2 = 5
+
+soma = num1 + num2  # Adição
+subtracao = num1 - num2  # Subtração
+multiplicacao = num1 * num2  # Multiplicação
+divisao = num1 / num2  # Divisão (resultado sempre será float)
+divisao_inteira = num1 // num2  # Retorna apenas a parte inteira do resultado
+modulo = num1 % num2  # Resto da divisão
+
+# Exibindo os resultados das operações
+print("Soma:", soma)
+print("Subtração:", subtracao)
+print("Multiplicação:", multiplicacao)
+print("Divisão:", divisao)
+print("Divisão Inteira:", divisao_inteira)
+print("Módulo (resto da divisão):", modulo)
+
+# 4. Conclusão
+print("Esses são conceitos básicos sobre variáveis, tipos de dados e entrada/saída em Python!")

@@ -1,0 +1,37 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+# 1. Criando valores para o eixo X
+x = np.linspace(-10, 10, 100)  # Gera 100 pontos entre -10 e 10
+
+# 2. Definindo funções matemáticas
+def funcao_parabola(x):
+    return x**2  # Função quadrática (parábola)
+
+def funcao_seno(x):
+    return np.sin(x)  # Função seno
+
+# 3. Calculando valores para o eixo Y
+y_parabola = funcao_parabola(x)
+y_seno = funcao_seno(x)
+
+# 4. Criando o gráfico
+plt.figure(figsize=(10, 5))  # Define o tamanho do gráfico
+
+# Gráfico da parábola
+plt.plot(x, y_parabola, label="y = x²", color="blue")
+
+# Gráfico do seno
+plt.plot(x, y_seno, label="y = sin(x)", color="red")
+
+# 5. Personalizando o gráfico
+plt.axhline(0, color="black", linewidth=1)  # Linha horizontal em y=0
+plt.axvline(0, color="black", linewidth=1)  # Linha vertical em x=0
+plt.grid(True, linestyle="--", alpha=0.6)  # Adiciona um grid
+plt.legend()  # Adiciona a legenda
+plt.title("Gráficos de Funções Matemáticas")  # Título do gráfico
+plt.xlabel("Eixo X")  # Nome do eixo X
+plt.ylabel("Eixo Y")  # Nome do eixo Y
+
+# 6. Exibindo o gráfico
+plt.show()
